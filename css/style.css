@@ -1,0 +1,212 @@
+:root{
+    --red:#EE4B2B;
+    --yellow:#FFE900;
+    --green:#006E33;
+    --white:whitesmoke;
+}
+body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(/media/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed; 
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+header a{
+    text-decoration: none;
+    color:var(--green);
+    font-weight: bolder;
+    min-width: 180px;
+
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color:var(--red);
+}
+.maintext{
+    display:flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--green);
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding:.7em;
+    background-color: var(--green);
+    color: white;
+    border: 1px solid var(--green);
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    color:var(--white);
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+}
+#menuheading,#locheading{
+    display: flex;
+    font-size: 2.5em;
+    justify-content: center;
+    color:var(--red);
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+}
+.menu th{
+    color: var(--yellow);
+    font-size: 1.8em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.location{
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr)) ;
+}
+.location h2{
+    color: var(--yellow);
+    margin-bottom: .8em;
+}
+.location div{
+    flex: 1;
+    padding: 1em;
+}
+.Gandhipuram{
+    text-align: center;
+}
+.Thudiyalur{
+    text-align: center;
+}
+.Saravanampatti{
+    text-align: center;
+}
+/*.icons{
+    color: #006E33;
+}*/
+/* Base styles for the icons */
+/* Base styles for the icons */
+.icons i {
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effects for the icons */
+#insta:hover {
+    color: white;
+    background-color: #d62976;
+}
+#twitter:hover {
+    color: white;
+    background-color: #008AD8;
+}
+#fb:hover {
+    color: white;
+    background-color: #0000FF;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger */
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Apply the animations */
+#insta {
+    color: #d62976;
+    font-size: 30px;
+    margin: 0.5em;
+    animation: pulse 2s infinite; /* Pulsing animation */
+}
+
+#twitter {
+    color: #008AD8;
+    font-size: 30px;
+    margin: 0.5em;
+    animation: rotate 2s infinite; /* Rotating animation */
+}
+
+#fb {
+    color: #0000FF;
+    font-size: 30px;
+    margin: 0.5em;
+    animation: bounce 2s infinite; /* Bouncing animation */
+}
+.copyright {
+    margin-left: 20px;
+}
